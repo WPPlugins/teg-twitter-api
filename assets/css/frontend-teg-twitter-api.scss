@@ -1,0 +1,123 @@
+body{
+	.teg-feed-tmpl1{
+		ul{
+			list-style: none;
+
+			li{
+				padding-left:50px;
+				position: relative;
+				padding:15px 5px;
+				background:#fff;
+				border-bottom:1px solid rgba(15, 70, 100, 0.12);
+				&:hover{
+					background-color:rgba(160,200,220,.12);
+				}
+				&:first-child{
+					border-top:1px solid rgba(15, 70, 100, 0.12);
+				}
+			}
+		}
+		
+		.teg-ta-user-logo{
+			top:15px;
+			left:5px;
+			height: 40px;
+			width: 40px;
+			position: absolute;
+			overflow:hidden;
+			img{
+				max-width:100%;
+				height:auto;
+			}
+		}
+
+		.teg-ta-single-feeds{
+			padding-left:50px;
+			color:#000;
+			a{
+				text-decoration: none;
+				border:none;
+				box-shadow: none;
+				&:hover{
+					text-decoration:none;
+					border:none;
+					box-shadow: none;
+				}
+				&:focus{
+					text-decoration:none;
+					border:none;
+					box-shadow: none;
+				}
+			}
+			h5{
+				margin:0;
+				font-size:14px;
+				a{
+					&:hover{
+						color:inherit;
+					}
+					.teg-ta-account-name{
+						&:hover{
+							color:rgb(85, 172, 238);
+						}
+					}
+					.teg-ta-user-name{
+						font-size:13px;
+						font-weight: 300;
+					}
+				}
+			}
+			p{
+				font-size:16px;
+				margin:0px;
+				a{
+					color:rgb(85, 172, 238);
+					&:hover{
+						color:rgb(85, 172, 238);
+						opacity:0.7;
+					}
+				}
+			}
+		}
+
+		.teg-ta-feeds-actions{
+			.teg-ta-feed-post-time{
+					font-size:13px;
+					color:rgb(136, 153, 166);
+					display:block;
+					text-align: right;
+					float: right;
+					line-height: 30px;
+					&:hover{
+						color:rgb(85, 172, 238);
+					}
+				}
+			.teg-ta-feed-like, .teg-ta-feed-share{
+
+				a{
+					font-size:0;
+					height:30px;
+					width:30px;
+					display:inline-block;
+					background-image:url('../img/twitter-like.svg');
+					background-position:center center;
+					background-repeat: no-repeat;
+					&:hover{
+						background-image:url('../img/twitter-like-hover.svg');
+					}
+				}
+
+			}
+			.teg-ta-feed-share{
+				a{
+					background-image:url('../img/twitter-share.svg');
+					&:hover{
+						background-image:url('../img/twitter-share-hover.svg');
+					}
+				}
+			}
+
+		}
+
+	}
+}
